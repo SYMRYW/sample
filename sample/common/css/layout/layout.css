@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* レイアウト系のスタイルはここに記述します
+レイアウト系にはあまり"c-title"などcomponent.cssのスタイルを使いません(使えるなら使っても良い)
+project.cssは絶対に使いません
+レイアウト系に関する固有のスタイルは全てここに記述できるためです
+----------------------------------------------------------------- */
+/* contents
+----------------------------------------------------------------- */
+/* ============================== Wrapper ============================== */
+.l-wrapper {
+	background-attachment: fixed;
+	background-color: #eee;
+	background-image: url(../../img/bg-dot.svg);
+	background-repeat: repeat;
+	min-height: 100vh;
+}
+/* ============================ flame ============================= */
+.l-frame {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 800px;
+	padding-top: 50px;
+}
+/* ============================ Contents ============================= */
+.l-contents {
+	background-color: #edffbd;
+	padding: 30px 20px;
+	width: 500px;
+}
+/* ============================ side ============================= */
+.l-side {
+	width: 250px;
+}
+.l-side_inner {
+	background-color: #fffcc1;
+	padding: 30px 20px;
+}
+.l-side_list {
+	line-height: 1.8;
+}
+.l-side_listItem a {
+	color: #7a7a7a;
+}
+.l-side_listItem a:hover {
+	text-decoration: underline;
+}
+/* ============================ header ============================= */
+.l-header {
+	background-color: #ffcdcd;
+	box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+	padding: 15px 0;
+}
+.l-header_inner {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 800px;
+}
+.l-header_title {
+	text-align: center;
+}
+.l-header_titleText {
+	font-size: 2rem;
+}
+.l-header_icon i {
+	color: #fff;
+	font-size: 3rem;
+}
+/* ============================ footer ============================= */
+.l-footer {
+	margin-top: 30px;
+	text-align: center;
+}
+.l-footer_inner {
+	padding: 30px 0;
+}

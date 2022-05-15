@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* base
+----------------------------------------------------------------- */
+* {
+	box-sizing: border-box;
+}
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	min-width: 320px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	opacity: .8;
+}

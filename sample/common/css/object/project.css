@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* 他に必要なBlockがあればここに追加してください
+Block名は自由に付けていいですが、他の人が見ても分かりやすいものにしてください
+また他のBlock名と被らないようにしてください
+(例えば下記の"p-topBlock"のBlock名は"topBlock"です 一目でトップページのブロックに対するスタイルだと分かります)
+このファイルに記述するのは一部でしか使わない固有スタイルのみです
+共通スタイルを追加したい場合はcomponent.css内に記述します
+----------------------------------------------------------------- */
+/* topBlock
+----------------------------------------------------------------- */
+.p-topBlock {
+	background-color: #d5fdfa;
+	padding: 20px;
+}
+.p-topBlock_inner {
+	border: 3px solid #fff;
+	border-radius: 5px;
+	padding: 10px 20px 20px;
+}
+.p-topBlock_inner + .p-topBlock_inner {
+	margin-top: 20px;
+}

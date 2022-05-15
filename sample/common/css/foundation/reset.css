@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*
+YUI 3.6.0pr1 (build 5195)
+Copyright 2012 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{ font-size: 62.5%; color:#333; background: #ffffff; height: 100%;}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+body, div, dl, dt, dd, ol, ul, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, section, nav, article, aside, hgroup, header, footer, figure, figcaption, details, summary, menu { margin: 0; padding: 0; }
+table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; }
+address, caption, cite, code, dfn, em, i, strong, th, var { font-style: normal; font-weight: normal; }
+em {font-weight: bold; font-style:normal;}
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; outline: none;}
+q:before, q:after { content:''; }
+abbr, acronym { border: 0; font-variant: normal; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+input, textarea, select { font-family: inherit; font-size: inherit; font-weight: inherit; }
+input, textarea, select { *font-size: 100%; }
+legend { color: #333; }
+#yui3-css-stamp.cssreset { display: none; }
+body{ font: 13px/1.231 "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN","メイリオ", Meiryo, Verdana, arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; *font-size: small; *font: x-small; }
+ select, input, button, textarea { font:99% "游ゴシック", YuGothic, Verdana, arial, helvetica, clean, sans-serif; *font-size: 100%; } table { border-collapse: collapse; border-spacing :0; font-size: inherit; font: 100% } pre, code, kbd, samp, tt { font-family: monospace; *font-size: 108%; line-height: 100% } #yui3-css-stamp.cssfonts { display:none }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal; }
+pre, code, kbd, samp, tt { font-family: monospace; *font-size: 108%; line-height: 100%; }
+dl, p, ul, ol {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+ul, ol {
+	list-style: none;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: auto | grayscale;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: 100%;
+	letter-spacing: -0.01px;
+	text-size-adjust: 100%;
+	height: 100%;
+}
+*,*:before,*:after {
+	box-sizing: border-box;
+}
