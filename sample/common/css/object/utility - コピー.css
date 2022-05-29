@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* 微調整に使えるスタイルです。どんなところにも置くことができます。
+ただ、uriliry単体で置くことはできません
+必ず"l-"、"c-"、"p-"で始まるクラスの隣に置きます
+--- NG例 ----
+<div class="u-align-center">
+	<p class="u-color1">タイトル</p>
+</div>
+--- OK例 ----
+<div class="c-title u-align-center">
+	<p class="c-title_text u-color1">タイトル</p>
+</div>
+
+uriliryは必ず使わなければいけないわけではありません
+例えばサイト内全てのタイトルが「真ん中寄せ」「文字色グレー」「太文字」のというスタイルだった場合
+【html】
+<div class="c-title u-align-center">
+	<p class="c-title_text u-color1 u-text-bold">タイトル</p>
+</div>
+↑で再現することもできますが、このような長いクラスを何度も書くのは大変なので以下のようにします
+【html】
+<div class="c-title">
+	<p class="c-title_text">タイトル</p>
+</div>
+【css】
+.c-title {
+	text-align: center;
+}
+.c-title_text {
+	color #ccc;
+	font-weight: bold;
+}
+
+もしこのスタイルをサイト全体ではなく、一部のページでしか使わない場合は、project.cssに記述します
+例えば「ご利用の流れ(flow)」というページだけで使うタイトルである場合、"p-flowTitle"というスタイルを用意します
+【html】
+<div class="p-flowTitle">
+	<p class="p-flowTitle_text">タイトル</p>
+</div>
+【css】
+.p-flowTitle {
+	text-align: center;
+}
+.p-flowTitle_text {
+	color #ccc;
+	font-weight: bold;
+}
+
+他に必要なUtilityがあればここに追加してください
+----------------------------------------------------------------- */
+/* align
+----------------------------------------------------------------- */
+.u-align-center {
+	text-align: center;
+}
+.u-align-right {
+	text-align: right;
+}
+.u-align-left {
+	text-align: left;
+}
+.u-align-justify {
+	text-align: justify;
+}
+/* color
+----------------------------------------------------------------- */
+/* グレー */
+.u-text-color {
+	color: #eee;
+}
+/* 赤 */
+.u-text-color1 {
+	color: #f00;
+}
+/* 赤 */
+.u-text-color2 {
+	color: #00f;
+}
+/* background-color
+----------------------------------------------------------------- */
+/* 白 */
+.u-bg-color {
+	background-color: #fff;
+}
+/* 赤 */
+.u-bg-color1 {
+	background-color: #f00;
+}
+/* 赤 */
+.u-bg-color2 {
+	background-color: #00f;
+}
+/* display
+---------------------------------------------------------------- */
+.u-display-blockPc {
+	display: block;
+}
+@media only screen and (max-width:896px) {
+	.u-display-blockTab {
+		display: block;
+	}
+}
+@media only screen and (max-width:414px) {
+	.u-display-blockSp {
+		display: block;
+	}
+}
+.u-display-inlinePc {
+	display: inline;
+}
+@media only screen and (max-width:896px) {
+	.u-display-inlineTab {
+		display: inline;
+	}
+}
+@media only screen and (max-width:414px) {
+	.u-display-inlineSp {
+		display: inline;
+	}
+}
+.u-display-nonePc {
+	display: none;
+}
+@media only screen and (max-width:896px) {
+	.u-display-noneTab {
+		display: none;
+	}
+}
+@media only screen and (max-width:896px) {
+	.u-display-noneTabBlockSp {
+		display: none;
+	}
+}
+@media only screen and (max-width:414px) {
+	.u-display-noneTabBlockSp {
+		display: block;
+	}
+}
+@media only screen and (max-width:414px) {
+	.u-display-noneSP {
+		display: none;
+	}
+}
+.u-display-nonePcBlockTab {
+	display: none;
+}
+@media only screen and (max-width:896px) {
+	.u-display-nonePcBlockTab {
+		display: block;
+	}
+}
+.u-display-nonePcBlockSp {
+	display: none;
+}
+@media only screen and (max-width:414px) {
+	.u-display-nonePcBlockSp {
+		display: block;
+	}
+}
+@media only screen and (max-width:896px) {
+	.u-display-blockTabNoneSp {
+		display: block;
+	}
+}
+@media only screen and (max-width:414px) {
+	.u-display-blockTabNoneSp {
+		display: none;
+	}
+}
+/* margin, padding
+----------------------------------------------------------------- */
+.u-mg-topXS {
+	margin-top: 5px;
+}
+.u-mg-topS {
+	margin-top: 10px;
+}
+.u-mg-topM {
+	margin-top: 20px;
+}
+.u-mg-topL {
+	margin-top: 30px;
+}
+.u-mg-top2L {
+	margin-top: 40px;
+}
+.u-mg-top3L {
+	margin-top: 50px;
+}
+.u-mg-top4L {
+	margin-top: 60px;
+}
+.u-mg-top5L {
+	margin-top: 70px;
+}
+.u-mg-top6L {
+	margin-top: 60px;
+}
+.u-mg-rightXS {
+	margin-right: 5px;
+}
+.u-mg-rightS {
+	margin-right: 10px;
+}
+.u-mg-rightM {
+	margin-right: 20px;
+}
+.u-mg-leftXS {
+	margin-left: 5px;
+}
+.u-mg-leftS {
+	margin-left: 10px;
+}
+.u-mg-leftM {
+	margin-left: 20px;
+}
+/* text
+----------------------------------------------------------------- */
+.u-text-bold {
+	font-weight: bold;
+}
+.u-text-sizeS {
+	font-size: 1.4em;
+}
+.u-text-sizeM {
+	font-size: 1.6em;
+}
+.u-text-sizeL {
+	font-size: 1.8em;
+}
